@@ -2,7 +2,9 @@
 
 ## 1、背景及框架
 
-![ssss](./images/ed.png)
+<div align="center">
+  <img src="./images/transformer.png" alt="描述" style="display: block; margin: 0 auto;"/>
+</div>
 
 ## 2、Encoder编码器
 
