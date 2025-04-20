@@ -8,13 +8,13 @@
 &emsp;&emsp;我们可以先看一下这个网络的整体架构，接下来几章中我会逐步介绍Transfomer中的各个细节。下图是经典论文《Attention Is All You Need》中的模型架构图，主要**由左边N个编码器Encoder和右边N个解码器Decoder组成**，Encoder的输入即为原始输入，比如翻译任务中的原句子（以翻译任务：“自动驾驶轨迹规划”为例），Decoder的输入为不断将原句子的翻译结果标签右移，预测下一个词（比如输入[Autonomous Driving]后它会预测出下一个词[trajectory]）。
 
 <div align="center">
-  <img src="./images/transformer_source.png" alt="描述" style="display: block; margin: 0 auto;width: 60%; max-width: 500px;"/>
+  <img src="./images/transformer_source.png" alt="描述" style="display: block; margin: 0 auto;width: 30%; max-width: 500px;"/>
 </div>&nbsp;
 
 &emsp;&emsp;下面我会以简单的机器翻译任务为例详细介绍Transformer的机制和架构，其整体架构如下,输入为“自动驾驶轨迹规划”，经过N层的Encoder编码后，其结果分别输入到N层的Decoder中，最后得到最终的翻译结果，接下来的章节我们来详细学习一下这个任务是怎么被完成的。
 
 <div align="center">
-  <img src="./images/transformer1.png" alt="描述" style="display: block; margin: 0 auto;"/>
+  <img src="./images/transformer_1.png" alt="描述" style="display: block; margin: 0 auto;"/>
 </div>
 </font>
 
